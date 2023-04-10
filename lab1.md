@@ -18,9 +18,9 @@ For now, my username is: cs15lsp23jz
 ## SSH connect with username and passowrd
 Note: if in Windows computer, might need to install _git_ on Windows
 
-1) Use the command ssh cs15lsp23jz@ieng6.ucsd.edu (notice I use my specific account number there)
-1.1) If it's your firsrt time connecting, you will get a warning message, just type yes to connect
-2) Enter your passoword
+1) Use the command ssh cs15lsp23jz@ieng6.ucsd.edu (notice I use my specific account number there)  
+1.1. If it's your firsrt time connecting, you will get a warning message, just type yes to connect  
+2) Enter your passoword  
 
 It should look something like this:  
 ![Image](LabReport1-sc2.png)
