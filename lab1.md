@@ -12,8 +12,8 @@ Download the version compatible with your device.
 ## Student account number
 
 Look up your course-specific account for CSE15L here:
-https://sdacs.ucsd.edu/~icc/index.php
-For now, your username is: cs15lsp23jz
+https://sdacs.ucsd.edu/~icc/index.php  
+For now, my username is: cs15lsp23jz
 
 ## SSH connect with username and passowrd
 Note: if in Windows computer, might need to install _git_ on Windows
