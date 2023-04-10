@@ -35,5 +35,9 @@ Some cool commands to try:
 * cp /home/linux/ieng6/cs15lsp23/public/hello.txt ~/
 * cat /home/linux/ieng6/cs15lsp23/public/hello.txt
   
-These should look something like this:  
+For example, typing "cd ieng6" essentially goes to /home/linux/ieng6/  
+Running "ls" now will show all the possible contents/paths to different classes on the ieng6 level  
+See lines 5,6 in the example below
+  
+Example:  
 ![Image](LabReport1-sc3.png)
