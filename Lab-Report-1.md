@@ -15,7 +15,7 @@ This command listed everything that was in the current working directory (/home)
 [user@sahara ~]$ cat
 ^C
 ```
-This command tried to read each file parameter and print out standard output. I didn't specify any files, so it wasn't reading anything. This is not an error, terminal is waiting for an input. To get back to the command line, I used control+C. Working directory was still /home.
+This command tried to read each file parameter and print out standard output. I didn't specify any files, so it wasn't reading anything. This output is not an error, terminal is waiting for an input. To get back to the command line, I used control+C. Working directory was still /home.
 # 2. Using the command with a path to a directory as an argument
 ## cd
 ```
