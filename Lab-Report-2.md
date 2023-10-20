@@ -16,3 +16,5 @@ After the Server is alreay created (using the main method in StringServer, which
 
 In this screenshot, the method handleRequest(URI url) was called again with the url of this specific screen-shot as its argument. The relevant field of the class are ```String output``` and ```int size```. Before this request, these were ```"1. CSE11\n"``` and ```1``` respectively. In the exact same fashion that I described above, by concatenating the new request to its existing value, output ends being ```"1. CSE11\n2. Thiago\n"``` and size ends up being ```2```. During the duration of this request, the url value, which was an URI object, didn't change. In a conceptual level, it represented this: http://localhost:2300/add-message?s=Thiago. This didn't change because there was no other request made while this one was being processed. Also, there is no code in the method that changes this value.
 
+#Part 2: 
+
