@@ -1,4 +1,4 @@
-#Part 1: StringServer
+# Part 1: StringServer
 
 ## Code for StringServer:  
 
@@ -23,5 +23,23 @@ In this screenshot, the method handleRequest(URI url) was called again with the 
   
 The methods that ran here were: getPath(), equals("/add message"), getQuery(), split("="), equals("s"), concat(String.format("%d. %s\n", size+1, parameters[1])).
 
-#Part 2: 
+# Part 2: 
+
+<img width="432" alt="image" src="https://github.com/ThiagoDonato/cse15l-lab-reports/assets/130107055/2425733c-86c2-4a18-8b5e-9f563a8f59eb">
+
+id_rsa is my private key, and id_rsa.pub is my public key. The location of both of them can be found by using ```pwd``` as such:
+
+<img width="320" alt="image" src="https://github.com/ThiagoDonato/cse15l-lab-reports/assets/130107055/3bffecb7-560d-4ee2-bdf8-4d46b879f7a7">
+
+Here is a terminal interaction where I log into ieng6 with my course-specific account without being asked for a password:
+
+<img width="782" alt="image" src="https://github.com/ThiagoDonato/cse15l-lab-reports/assets/130107055/32ceea6e-1a43-4df0-9392-025b237b45e5">
+
+# Part 3:
+
+In Lab2/3 I learned how to create and store a key so I don't have to keep using my Passcode when connecting to a server using ssh. Also I learned two new commands: ```scp``` copies files or directories between a local and a remote system or between two remote systems. ```mkdir``` allows me to create directories. Now I also know that the terminal comes with its own instruction manual for certain commands, all I have to do is type ```man <command_name>```.
+
+
+
+
 
