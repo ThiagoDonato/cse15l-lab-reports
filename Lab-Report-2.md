@@ -27,9 +27,7 @@ The methods that ran here were: getPath(), equals("/add message"), getQuery(), s
 
 <img width="432" alt="image" src="https://github.com/ThiagoDonato/cse15l-lab-reports/assets/130107055/2425733c-86c2-4a18-8b5e-9f563a8f59eb">
 
-id_rsa is my private key, and id_rsa.pub is my public key. The location of both of them can be found by using ```pwd``` as such:
-
-<img width="320" alt="image" src="https://github.com/ThiagoDonato/cse15l-lab-reports/assets/130107055/3bffecb7-560d-4ee2-bdf8-4d46b879f7a7">
+id_rsa is my private key, and id_rsa.pub is my public key. The location of my public key on ieng6 is ```./.ssh/id_rsa.pub```. The location of the private key on my personal computer is ```/Users/thiagodonato/.ssh/id_rsa
 
 Here is a terminal interaction where I log into ieng6 with my course-specific account without being asked for a password:
 
