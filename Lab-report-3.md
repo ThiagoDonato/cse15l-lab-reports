@@ -73,7 +73,7 @@ NORAD Mission and Structure. NORAD is a binational command established in 1958 b
 
 ...
 ```
-example 2: Recursively searches for variations (uppercase or lowercase) of fire in all files inside ~/technical/government
+example 2: Recursively searches for variations (uppercase or lowercase) of fire in all files inside ~/technical/government  
 COMMAND
 ```
 cd government
@@ -107,7 +107,7 @@ OUTPUT:
 - Source: https://docs.rackspace.com/docs/use-the-linux-grep-command  
 
 __Current working directory = ~/techincal__  
-example 1: Lists the files matching the pattern rr* in the working directory that contains the word 'this'.
+example 1: Lists the files matching the pattern rr* in the working directory that contains the word 'this'.  
 COMMAND
 ```
 cd biomed
@@ -126,7 +126,7 @@ rr37.txt
 rr73.txt
 rr74.txt
 ```
-example 2: Searches recursively in the current working directory for files that contain the word acl
+example 2: Searches recursively in the current working directory for files that contain the word acl  
 COMMAND
 ```
 cd biomed
@@ -182,7 +182,7 @@ OUTPUT:
 - Source: https://docs.rackspace.com/docs/use-the-linux-grep-command  
 
 __Current working directory = ~/techincal__  
-example 1: Searches for lines that don't have a ',' in the file 1471-213X-1-11.txt
+example 1: Searches for lines that don't have a ',' in the file 1471-213X-1-11.txt  
 COMMAND
 ```
 cd biomed
@@ -206,7 +206,7 @@ OUTPUT:
         in vivo. 
 ...
 ```
-example 2: Searches for lines in chapter-10.txt that don't contain the word 'the'
+example 2: Searches for lines in chapter-10.txt that don't contain the word 'the'  
 COMMAND
 ```
 cd 911report
@@ -230,7 +230,7 @@ OUTPUT:
 - Source: thegeekstuff.com/2009/03/15-practical-unix-grep-command-examples/  
 
 __Current working directory = ~/techincal__  
-example 1: Recursively counts the number of lines with the word 'death' in all the files inside the current working directory.
+example 1: Recursively counts the number of lines with the word 'death' in all the files inside the current working directory.  
 COMMAND
 ```
 cd 911report
@@ -256,7 +256,7 @@ OUTPUT:
 ./chapter-10.txt:1
 ./chapter-11.txt:0
 ```
-example 2: Recursively counts the number of lines that doesn't contain a full stop '.' in all the files inside 911report.
+example 2: Recursively counts the number of lines that doesn't contain a full stop '.' in all the files inside 911report.  
 COMMAND:
 ```
 cd 911report
