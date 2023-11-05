@@ -12,7 +12,7 @@ After the Server is alreay created (using the main method in StringServer, which
 Methods run inside the handleRequest method are: getPath(), equals("/add message"), getQuery(), split("="), equals("s"), concat(String.format("%d. %s\n", size+1, parameters[1])).  
   
 General Description of Methods and Arguments:  
-When the handleRequest(URI url) method is run, output uses (size+1 = 1) and (parameters[1] = "CSE11") to become "1. CSE11\n". parameters[1] comes from a couple string modifications: 1. getQuery(add-message?s=CSE11) --> "s=CSE11"; 2. .split("=") creates parameters array == {"s", "CSE11"}; 3. parameters[1] = "CSE11". Notice that the "\n" is also added to output so that it skips to the next line in case any new strings get concatenated.  
+When the handleRequest(URI url) method is run, output uses ```(size+1 = 1)``` and ```(parameters[1] = "CSE11")``` to become ```"1. CSE11\n"```. parameters[1] comes from a couple string modifications: 1. ```getQuery(add-message?s=CSE11)``` --> ```"s=CSE11";``` 2. ```.split("=")``` creates parameters ```array == {"s", "CSE11"}```; 3. parameters[1] = ```"CSE11"```. Notice that the ```"\n"``` is also added to output so that it skips to the next line in case any new strings get concatenated.  
 After all this, size is increased by 1 (becomes 0+1=1). A value that didn't change after all this was the url, which was an URI object that, in a conceptual level, represented this: http://localhost:2300/add-message?s=CSE11. This didn't change because there was no other request made while this one was being processed. Also, there is no code in the method that changes this value.
 
 ## Screenshot2:  
