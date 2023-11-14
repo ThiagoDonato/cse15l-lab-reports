@@ -1,4 +1,4 @@
-# CSE15L: Lab Report 4 - Thiago
+## Lab Report 4 - Thiago
 
  - ## __Step 4: Log into ieng6__  
 <img width="771" alt="image" src="https://github.com/ThiagoDonato/cse15l-lab-reports/assets/130107055/7782505c-1efc-4be0-83cc-15703b5f97c0">
