@@ -1,4 +1,4 @@
-# Report 4
+# CSE15L: Lab Report 4 - Thiago
 
  - ## __Step 4: Log into ieng6__  
 <img width="771" alt="image" src="https://github.com/ThiagoDonato/cse15l-lab-reports/assets/130107055/7782505c-1efc-4be0-83cc-15703b5f97c0">
@@ -40,7 +40,7 @@ This has the same function as what was explained in step 6. It runs the bash fil
 ```git add L<tab>```  
 ```git commit -m "'"```  
 ```git push origin```  
-The first tab auto-completes to ListExamples.java since it tried to match the name to the files modified and ListExamples.java was the only one I changed. Git add, adds the changes made to the staging area. git commit -m "'" captures a snapshot of the projects changes in the staging area with a message ```'```. I chose this message because it is the key closest to ```"``` that would allow me to write the quickest non-empty message. git push origin transfers the commited versions of my files to the remote repository. Note: origin is the conventional shorthand name of the url for the remote repository.
+The first ```<tab>``` auto-completes to ListExamples.java since it tried to match the name to the files modified and ListExamples.java was the only one I changed. ```git add``` adds the changes made to the staging area. ```git commit -m "'"``` captures a snapshot of the projects changes in the staging area with a message ```'```. I chose this message because it is the key closest to ```"``` that would allow me quickly write a non-empty message. git push origin transfers the commited versions of my files to the remote repository. Note: origin is the conventional shorthand name of the url for the remote repository.
 
 
 
