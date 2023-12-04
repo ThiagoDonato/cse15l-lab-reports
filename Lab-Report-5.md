@@ -1,4 +1,4 @@
-# Scenario - Finding the car model with the highest price from a CSV file 
+# Part 1: Scenario - Finding the car model with the highest price from a CSV file 
 
 The video shown in Quiz9 inspired this idea: https://www.youtube.com/watch?v=dogmDTc6so8  
 This video is of Dev Gulati showing how to extract and apply commands to a genomics dataset. The commands I came up with are similar to the ones he use.
@@ -10,12 +10,12 @@ Prompt to student: The file ```cars.csv``` contains information about the cars s
 3. Output to the terminal the price and the model of the most expensive car
 4. Here is an overview of the information flow you should have: ```cars.csv``` --> bash script --> ```onlyValues.txt``` --> Java code --> highest price --> bash script --> car model with highest price
 
-## Original post from a student showing a symptom and a description of a guess at the bug/some sense of what the failure-inducing input is
+## 1. Original post from a student showing a symptom and a description of a guess at the bug/some sense of what the failure-inducing input is
 Hi CSE15L staff, I finished the most recent assignment, but when I run my code I get an bug. Here is the symptom I observed:  
 <img width="702" alt="image" src="https://github.com/ThiagoDonato/cse15l-lab-reports/assets/130107055/6b1bb83b-5645-4d66-b893-fe2cf91e9f6c">  
 This seems to indicate that the error is in my Java program. The only input to that program is the file ```onlyValues.txt```. I think that can be the failure-inducing input. So maybe my bash script didn't properly process the ```cars.csv``` file. It is worth noting that I was having some trouble downloading the CSV file from you guys' repo, so I just copied the contents line by line into my own computer.
 
-## A response from a TA asking a leading question or suggesting a command to try
+## 2. A response from a TA asking a leading question or suggesting a command to try
 Hello, I like your hypothesis that the file ```onlyValues.txt``` may be the failure-inducing input. Still, you are correct that it is generated from your bash script, meaning we should also look at that.  
 Lets review the information flow of the assignment: ```cars.csv``` --> bash script --> ```onlyValues.txt``` --> Java code --> highest price ... To really understand what is going on, we might need to take a look at your ```cars.csv``` file **before** entering the bash script and the ```onlyValues.txt``` file **after** the script ran. This is especially important since you said you had to copy the contents of the CSV value yourself.  
 To do that, I suggest using the following commands:  
@@ -25,7 +25,7 @@ To do that, I suggest using the following commands:
 4. ```bash extract-price.sh```   #Run your bash script to process the csv file and create the onlyValues.txt file
 5. ```cat onlyValues.txt```   #Use this to see what you have in the onlyValues.txt file
 
-## Another screenshot/terminal output showing what information the student got from trying that, and a clear description of what the bug is.
+## 3. Another screenshot/terminal output showing what information the student got from trying that, and a clear description of what the bug is.
 Trying the command ```cat cars.csv``` I got the following output:  
 <img width="476" alt="image" src="https://github.com/ThiagoDonato/cse15l-lab-reports/assets/130107055/09b5b332-ec7b-457b-8f9e-0656e69d2752">  
 This seemed pretty correct and I didn't find anything wrong here.  
@@ -40,7 +40,7 @@ This shows me that my bash script isn't actually doing anything wrong since it i
 
 **Bug description**: I went back and looked at the output of ```cat cars.csv```. Now, paying close attention to the last row where that ```90000 Green``` value was stored. I noticed how all other prices were stored using a comma between Price and Color. I must've copied the file wrong and didn't notice that I needed to add a comma value. I guess that explains the bug later in the Java program. Since my code parses each value in the line to an Integer, it wasn't able to parse the value ```90000 Green```, throwing an ```NumberFormatException```. I will use the ```vim``` command to edit the ```cars.csv``` file and add that sneaky comma!
 
-## All the information about the setup
+## 4. All the information about the setup
 1. ### The file & directory structure needed
 All the files are in the Home Directory, so the set-up you need to run the program is: 
 ```
